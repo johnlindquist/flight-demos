@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,view,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.views.FlashExplorer",1260384894888
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1260384897215
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260384900105
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260384901459
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1260384903027
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260384907169
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1260384935210
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1260384938211
+started,bundle,com.powerflasher.fdt.core.swc,3.5.0.1040,"com.powerflasher.fdt.core.swc",1260384958256
+error,log,,,"FDT log: File not found: /FlightTutorial/playerglobal.swc.",1260384958335
+error,log,,,"FDT log: No message gotten.",1260384963395
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260384964126
+executed,command,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.project.properties",1260384964133
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260384976184
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260384978629
+executed,command,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.project.properties",1260384978635
+started,bundle,com.powerflasher.fdt.swfviewer,3.5.0.1040,"com.powerflasher.fdt.swfviewer",1260384981359
+executed,command,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.launch.mxmlcLaunchShortcut.debug",1260384981400
+started,bundle,com.powerflasher.fdt.core.launch,3.5.0.1040,"com.powerflasher.fdt.core.launch",1260384981426
+started,bundle,com.powerflasher.fdt.core.debugger.adapter,3.5.0.1040,"com.powerflasher.fdt.core.debugger.adapter",1260384981439
+opened,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1260384981632
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260384983213
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260384990055
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260384993571
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260385001043

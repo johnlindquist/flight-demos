@@ -1,0 +1,6 @@
+#Wed Dec 09 13:57:18 EST 2009
+pathvariable.AS2_CORE_DEFAULT=C\:/eclipse/configuration/com.powerflasher.fdt.core/.config/core/as2
+version=1
+eclipse.preferences.version=1
+pathvariable.Flex_3_SDK_0=C\:/eclipse/plugins/com.powerflasher.fdt.shippedflex_3.3.0.4852_1001/flex
+pathvariable.FLEX_3_4=D\:/sdks/flex_sdk_3.4

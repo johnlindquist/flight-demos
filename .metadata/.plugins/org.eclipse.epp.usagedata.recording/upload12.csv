@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.specification.version,sysinfo,,,"1.0",1260385081718
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1260385081718
+java.vm.version,sysinfo,,,"16.0-b10",1260385081718
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1260385083644
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260385099571
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260385101261
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.deleteResources",1260385101266
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260385104496
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260385121606
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1260385121613
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1260385121613
+started,bundle,org.eclipse.jdt.launching,3.5.0.v20090527,"org.eclipse.jdt.launching",1260385121771
+started,bundle,com.powerflasher.fdt.core.mxml,3.5.0.1040,"com.powerflasher.fdt.core.mxml",1260385122818
+started,bundle,com.powerflasher.fdt.shippedflex,3.3.0.4852_1001,"com.powerflasher.fdt.shippedflex",1260385122823
+started,bundle,com.powerflasher.fdt.core.swc,3.5.0.1040,"com.powerflasher.fdt.core.swc",1260385123009
+started,bundle,com.powerflasher.fdt.swfviewer,3.5.0.1040,"com.powerflasher.fdt.swfviewer",1260385136377
+executed,command,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.launch.mxmlcLaunchShortcut.debug",1260385136421
+started,bundle,com.powerflasher.fdt.core.launch,3.5.0.1040,"com.powerflasher.fdt.core.launch",1260385136451
+started,bundle,com.powerflasher.fdt.core.debugger.adapter,3.5.0.1040,"com.powerflasher.fdt.core.debugger.adapter",1260385136487
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260385138283
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260385142789
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260385164905
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260385171020
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260385172607
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260385181431

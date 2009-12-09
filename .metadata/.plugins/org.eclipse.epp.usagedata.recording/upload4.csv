@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1260384840356
+java.vm.specification.version,sysinfo,,,"1.0",1260384840356
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1260384840356
+java.vm.version,sysinfo,,,"16.0-b10",1260384840356
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1260384841216
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1260384841227
+closed,view,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.internal.introview",1260384841272
+started,bundle,org.eclipse.core.filesystem,1.2.0.v20090507,"org.eclipse.core.filesystem",1260384844460
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.0.v20090513-2000,"org.eclipse.ltk.core.refactoring",1260384844467
+started,bundle,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring",1260384844471
+opened,view,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.views.FlashExplorer",1260384844487
+opened,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.ProblemView",1260384844588
+activated,perspective,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.Perspective",1260384844612
+activated,view,org.eclipse.ui.views,3.4.1.M20090826-0800,"org.eclipse.ui.views.ContentOutline",1260384844615
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.perspectives.showPerspective",1260384844654
+executed,command,,,"com.powerflasher.fdt.ui.Perspective",1260384844654
+activated,view,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.views.FlashExplorer",1260384845296
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260384848242
+started,bundle,org.eclipse.jdt.launching,3.5.0.v20090527,"org.eclipse.jdt.launching",1260384890045
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260384890310
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1260384890317
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1260384890317
+started,bundle,com.powerflasher.fdt.core.mxml,3.5.0.1040,"com.powerflasher.fdt.core.mxml",1260384890376
+started,bundle,com.powerflasher.fdt.shippedflex,3.3.0.4852_1001,"com.powerflasher.fdt.shippedflex",1260384890394
+activated,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.ProblemView",1260384893054
