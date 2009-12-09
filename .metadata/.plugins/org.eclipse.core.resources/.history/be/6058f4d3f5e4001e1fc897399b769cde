@@ -1,12 +1,12 @@
-package com.flightxd.hellounion.domain.union.controller {
+package com.flightxd.hellounion.domain.union.controller 
+{
+	import net.user1.reactor.Reactor;
+	import com.flightxd.hellounion.domains.union.UnionDomain;
 	import flight.config.Config;
 	import flight.domain.AsyncCommand;
 	import flight.net.IResponse;
 
-	import net.user1.reactor.Reactor;
-
-	import com.flightxd.hellounion.domain.union.UnionDomain;
-	import com.flightxd.hellounion.domain.union.business.UnionDelegate;
+	import com.flightxd.hellounion.domains.union.business.UnionDelegate;
 
 	/**
 	 * @author John Lindquist

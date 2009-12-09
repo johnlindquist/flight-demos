@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;FlightTutorial&apos;" deleteContents="false" description="Delete resource &apos;FlightTutorial&apos;" element1="/FlightTutorial" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1260385101228"/>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;FlightTutorial&apos;" deleteContents="false" description="Delete resource &apos;FlightTutorial&apos;" element1="/FlightTutorial" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1260385101228"/>&#x0A;<refactoring comment="Delete resource &apos;FlightHelloUnion/src/com/flightxd/hellounion/domains&apos;" deleteContents="false" description="Delete resource &apos;FlightHelloUnion/src/com/flightxd/hellounion/domains&apos;" element1="/FlightHelloUnion/src/com/flightxd/hellounion/domains" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1260385495343"/>
 </session>

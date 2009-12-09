@@ -1,5 +1,4 @@
-package 
-{
+package {
 	import com.flightxd.hellounion.config.UnionConfig;
 	import com.flightxd.hellounion.domain.union.view.ConnectView;
 

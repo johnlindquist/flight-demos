@@ -1,8 +1,7 @@
 package com.flightxd.hellounion.config 
 {
+	import com.flightxd.hellounion.domains.union.business.UnionDelegate;
 	import flight.config.Config;
-
-	import com.flightxd.hellounion.domain.union.business.UnionDelegate;
 
 	/**
 	 * @author John Lindquist
