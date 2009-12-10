@@ -517,3 +517,31 @@ HandlerActivation(commandId=com.powerflasher.fdt.ui.actions.OpenInExplorer,
 HandlerActivation(commandId=com.powerflasher.fdt.ui.actions.OpenInExplorer,
 	handler=ActionDelegateHandlerProxy(null,com.powerflasher.fdt.internal.ui.editor.actions.ASShowInNavigator),
 	expression=AndExpression(ViewerContributionExpression(com.powerflasher.fdt.ui.editor.scope,null,org.eclipse.ui.internal.WorkbenchWindow@14e40da),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@14e40da)),sourcePriority=-2147467264)
+!SESSION 2009-12-10 10:14:53.275 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_18-ea
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.powerflasher.fdt.core 4 4 2009-12-10 10:15:56.604
+!MESSAGE FDT log: No message gotten.
+!STACK 0
+java.lang.NullPointerException
+	at com.powerflasher.fdt.internal.core.resources.AS2CoreLibraryStrategy.getCoreLibraryName(AS2CoreLibraryStrategy.java:141)
+	at com.powerflasher.fdt.internal.core.resources.FlashProjectAdapter.getCoreLibraryName(FlashProjectAdapter.java:420)
+	at com.powerflasher.fdt.internal.core.builder.FlashBuilder.checkCoreLibraryCorrect(FlashBuilder.java:617)
+	at com.powerflasher.fdt.internal.core.builder.FlashBuilder.fullBuild(FlashBuilder.java:242)
+	at com.powerflasher.fdt.internal.core.builder.FlashBuilder.build(FlashBuilder.java:142)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

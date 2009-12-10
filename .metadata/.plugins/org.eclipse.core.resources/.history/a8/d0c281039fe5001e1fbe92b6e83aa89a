@@ -15,7 +15,7 @@ package com.flightxd.hellounion.domains.union.commands
 	{
 		private var $:* = Config.main;
 		private var delegate:UnionDelegate = $.unionDelegate;
-		private var controller:UnionController = UnionController.getInstance();
+		private var domain:UnionController = UnionController.getInstance();
 
 		override public function execute():void
 		{
@@ -26,7 +26,7 @@ package com.flightxd.hellounion.domains.union.commands
 
 		private function connectResult(reactor:Reactor):void
 		{
-			controller.connectSuccess();
+			domain.connectSuccess();
 		}
 	}
 }

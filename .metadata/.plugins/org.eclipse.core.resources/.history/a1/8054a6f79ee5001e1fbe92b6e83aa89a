@@ -14,7 +14,7 @@ package com.flightxd.hellounion.view
 	 */
 	public class ConnectView extends Sprite 
 	{
-		private var controller:UnionController = UnionController.getInstance();
+		private var domain:UnionController = UnionController.getInstance();
 		public var connectionStatusDisplay:TextField = new TextField();
 		public var connectButton:Sprite = new Sprite();
 
@@ -36,13 +36,13 @@ package com.flightxd.hellounion.view
 
 		private function setupBindings():void
 		{
-			Bind.addBinding(connectionStatusDisplay, "text", controller, "model.connectionStatus");
-			Bind.addListener(connectionChanged, controller, "model.isConnected");
+			Bind.addBinding(connectionStatusDisplay, "text", domain, "model.connectionStatus");
+			Bind.addListener(connectionChanged, domain, "model.isConnected");
 		}
 
 		private function connectionChanged(event:PropertyEvent):void
 		{
-			if(controller.model.isConnected)
+			if(domain.model.isConnected)
 			{
 				showConnectedButton();
 			}
@@ -70,7 +70,7 @@ package com.flightxd.hellounion.view
 
 		private function connectButton_clickHandler(event:MouseEvent):void
 		{
-			controller.connect();	
+			domain.connect();	
 		}
 	}
 }

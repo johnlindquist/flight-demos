@@ -1,3 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="outline_presenter_bounds">
+	</section>
+	<section name="NewAS3ClassWizardPage">
+		<item value="true" key="NewAS3ClassWizardPage.STORE_CREATE_CONSTRUCTOR"/>
+		<item value="true" key="NewAS3ClassWizardPage.STORE_PUBLIC"/>
+		<item value="true" key="NewAS3ClassWizardPage.IMPLEMENT_METHODS"/>
+		<item value="false" key="NewAS3ClassWizardPage.STORE_INTERNAL"/>
+		<item value="" key="NewAS3ClassWizardPage.STORE_POST_ANT_LOCATION"/>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="hierarchy_presenter_bounds">
+	</section>
+	<section name="dependency_presenter_bounds">
+	</section>
+	<section name="type_presenter_bounds">
+	</section>
+	<section name="quickassistant_proposal_size">
+	</section>
 </section>
