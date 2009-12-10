@@ -1,7 +1,7 @@
 package 
 {
 	import com.flightxd.hellounion.config.UnionConfig;
-	import com.flightxd.hellounion.domain.union.view.ConnectView;
+	import com.flightxd.hellounion.view.ConnectView;
 
 	import flash.display.Sprite;
 
@@ -12,7 +12,7 @@ package
 	{
 		public var config:UnionConfig = new UnionConfig();
 		public var connectView:ConnectView = new ConnectView();
-		
+
 		public function Main()
 		{
 			addChild(connectView);	

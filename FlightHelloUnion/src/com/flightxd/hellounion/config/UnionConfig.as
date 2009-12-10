@@ -2,7 +2,7 @@ package com.flightxd.hellounion.config
 {
 	import flight.config.Config;
 
-	import com.flightxd.hellounion.domain.union.business.UnionDelegate;
+	import com.flightxd.hellounion.domains.union.business.UnionDelegate;
 
 	/**
 	 * @author John Lindquist
@@ -11,7 +11,6 @@ package com.flightxd.hellounion.config
 	{
 		public var unionServer:String = "tryunion.com";
 		public var unionPort:Number = 9100;
-		
 		public var unionDelegate:UnionDelegate = new UnionDelegate();
 	}
 }
