@@ -31,10 +31,7 @@ package com.flightxd.hellounion.view
 		
 		protected function view_connectHandler(event:Event):void
 		{
-			dispatch(event);
-			//I think this should be replaced with controller.connect() so the
-			//controller can manage command history. But I can't get injection on the command to
-			//work if I take that route...
+			controller.connect();
 		}
 
 		protected function connectionChanged(event:PropertyEvent):void

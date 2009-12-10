@@ -1,10 +1,10 @@
 package com.flightxd.hellounion.domains.union 
 {
-	import com.flightxd.hellounion.events.ConnectEvent;
 	import com.flightxd.hellounion.domains.union.business.UnionDelegate;
 	import com.flightxd.hellounion.domains.union.commands.Connect;
-	import com.flightxd.hellounion.view.ConnectViewMediator;
+	import com.flightxd.hellounion.events.ConnectEvent;
 	import com.flightxd.hellounion.view.ConnectView;
+	import com.flightxd.hellounion.view.ConnectViewMediator;
 
 	import org.robotlegs.mvcs.Context;
 
@@ -23,10 +23,9 @@ package com.flightxd.hellounion.domains.union
 		override public function startup():void
 		{
 			injector.mapSingleton(UnionController);
-			injector.instantiate(UnionController);
-
+			
 			injector.mapClass(UnionDelegate, UnionDelegate);
-
+			
 			mediatorMap.mapView(ConnectView, ConnectViewMediator);
 			commandMap.mapEvent(ConnectEvent.CONNECT, Connect);
 
