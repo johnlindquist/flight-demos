@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.editor.ASEditor",1260405143104
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.editor.ASEditor",1260405145915
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.editor.ASEditor",1260405146673
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.editor.ASEditor",1260405148111
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.editor.ASEditor",1260405150089
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260405179182
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260405185475
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.editor.ASEditor",1260405202606
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260405220151
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260405749149
+activated,view,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.views.FlashExplorer",1260405753319
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.editor.ASEditor",1260405754375
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260405845686
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260405908448
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.editor.ASEditor",1260405908595
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.editor.ASEditor",1260405916962
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.editor.ASEditor",1260405931231
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.editor.ASEditor",1260405952421
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260405994923
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1260406502468
+activated,view,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.views.FlashExplorer",1260406502477
+activated,editor,com.powerflasher.fdt.ui,3.5.0.1040,"com.powerflasher.fdt.ui.editor.ASEditor",1260406506525
+error,log,,,"FDT log: No message gotten.",1260406508561
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.text.contentAssist.proposals",1260406508668
+executed,command,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.jdt.ui.edit.text.java.correction.assist.proposals",1260406511451

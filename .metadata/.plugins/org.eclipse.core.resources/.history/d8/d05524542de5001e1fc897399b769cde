@@ -1,0 +1,10 @@
+package com.flightxd.hellounion.services 
+{
+
+	/**
+	 * @author John Lindquist
+	 */
+	public class UnionService 
+	{
+	}
+}

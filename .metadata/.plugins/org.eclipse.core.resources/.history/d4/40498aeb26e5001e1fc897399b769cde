@@ -1,0 +1,21 @@
+package 
+{
+	import com.flightxd.hellounion.config.UnionConfig;
+	import com.flightxd.hellounion.domain.union.view.ConnectView;
+
+	import flash.display.Sprite;
+
+	/**
+	 * @author John Lindquist
+	 */
+	public class Main extends Sprite 
+	{
+		public var config:UnionConfig = new UnionConfig();
+		public var connectView:ConnectView = new ConnectView();
+		
+		public function Main()
+		{
+			addChild(connectView);	
+		}
+	}
+}

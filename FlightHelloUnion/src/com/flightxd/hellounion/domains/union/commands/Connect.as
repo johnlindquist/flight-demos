@@ -21,8 +21,6 @@ package com.flightxd.hellounion.domains.union.commands
 		{
 			var commandResponse:IResponse = delegate.connect();
 			response = commandResponse;
-			
-			//should this just be an event listener in the domain instead?	
 			response.addResultHandler(connectResult);
 		}
 

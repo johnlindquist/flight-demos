@@ -1,0 +1,17 @@
+package com.flightxd.hellounion.config 
+{
+	import flight.config.Config;
+
+	import com.flightxd.hellounion.domain.union.business.UnionDelegate;
+
+	/**
+	 * @author John Lindquist
+	 */
+	public class UnionConfig extends Config 
+	{
+		public var unionServer:String = "tryunion.com";
+		public var unionPort:Number = 9100;
+		
+		public var unionDelegate:UnionDelegate = new UnionDelegate();
+	}
+}
