@@ -1,11 +1,11 @@
 package com.flightxd.hellounion.domains.union.business 
 {
-	import flight.config.Config;
 	import flight.net.IResponse;
 	import flight.net.Response;
 
 	import net.user1.reactor.ReactorEvent;
 
+	import com.flightxd.hellounion.config.UnionConfig;
 	import com.flightxd.hellounion.domains.union.UnionController;
 
 	import org.robotlegs.mvcs.Actor;
@@ -15,7 +15,8 @@ package com.flightxd.hellounion.domains.union.business
 	 */
 	public class UnionDelegate extends Actor
 	{
-		private var $:* = Config.main;
+		[Inject]
+		public var config:UnionConfig;
 		[Inject]
 		public var controller:UnionController;
 
@@ -23,7 +24,7 @@ package com.flightxd.hellounion.domains.union.business
 		{
 			var response:Response = new Response();
 			response.addCompleteEvent(controller.model.reactor, ReactorEvent.READY);
-			controller.model.reactor.connect($.unionServer, $.unionPort);
+			controller.model.reactor.connect(config.unionServer, config.unionPort);
 			
 			return response;
 		}

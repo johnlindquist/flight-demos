@@ -1,5 +1,6 @@
 package com.flightxd.hellounion.domains.union 
 {
+	import com.flightxd.hellounion.config.UnionConfig;
 	import com.flightxd.hellounion.domains.union.business.UnionDelegate;
 	import com.flightxd.hellounion.domains.union.commands.Connect;
 	import com.flightxd.hellounion.events.ConnectEvent;
@@ -24,6 +25,7 @@ package com.flightxd.hellounion.domains.union
 		{
 			injector.mapSingleton(UnionController);
 			
+			injector.mapClass(UnionConfig, UnionConfig);
 			injector.mapClass(UnionDelegate, UnionDelegate);
 			
 			mediatorMap.mapView(ConnectView, ConnectViewMediator);
