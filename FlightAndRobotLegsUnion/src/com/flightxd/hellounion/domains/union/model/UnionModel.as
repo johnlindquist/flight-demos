@@ -1,6 +1,5 @@
 package com.flightxd.hellounion.domains.union.model 
 {
-	import net.user1.reactor.Reactor;
 
 	/**
 	 * @author John Lindquist
@@ -12,7 +11,5 @@ package com.flightxd.hellounion.domains.union.model
 
 		[Bindable]
 		public var isConnected:Boolean = false;
-		
-		public var reactor:Reactor = new Reactor();
 	}
 }

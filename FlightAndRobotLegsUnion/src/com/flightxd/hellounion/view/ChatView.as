@@ -9,21 +9,35 @@ package com.flightxd.hellounion.view
 	/**
 	 * @author John Lindquist
 	 */
-	public class ConnectView extends Sprite 
+	public class ChatView extends Sprite 
 	{
 		public var connectionStatusDisplay:TextField = new TextField();
 		public var connectButton:Sprite = new Sprite();
+		public var receivedMessageDisplay:TextField = new TextField();
+		public var inputMessageDisplay:TextField = new TextField();
+		
 
-		public function ConnectView()
+		public function ChatView()
 		{
 			//textfield for showing union logs
 			connectionStatusDisplay.width = 500;
 			addChild(connectionStatusDisplay);
-			
+
 			//connection status button. green = connected, red = disconnected
 			showDisconnectedButton();
-			connectButton.y = 40;
+			connectButton.x = 450;
 			addChild(connectButton);
+			
+			//textfield for showing received messages
+			receivedMessageDisplay.x = 25;
+			receivedMessageDisplay.y = 30;
+			receivedMessageDisplay.height = 300;
+			receivedMessageDisplay.width = 500;
+			receivedMessageDisplay.border = true;
+			receivedMessageDisplay.multiline = true;
+			addChild(receivedMessageDisplay);
+			
+			
 			
 			connectButton.addEventListener(MouseEvent.CLICK, connectButton_clickHandler);
 		}

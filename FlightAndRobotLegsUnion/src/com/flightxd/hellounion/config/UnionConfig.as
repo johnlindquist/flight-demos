@@ -9,5 +9,6 @@ package com.flightxd.hellounion.config
 	{
 		public var unionServer:String = "tryunion.com";
 		public var unionPort:Number = 9100;
+		public var chatRoom:String = "chatRoom";
 	}
 }

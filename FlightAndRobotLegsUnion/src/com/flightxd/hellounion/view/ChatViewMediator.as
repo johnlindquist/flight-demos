@@ -1,5 +1,6 @@
 package com.flightxd.hellounion.view 
 {
+	import flight.net.IResponse;
 	import com.flightxd.hellounion.events.ConnectEvent;
 	import flight.binding.Bind;
 	import flight.events.PropertyEvent;
@@ -13,13 +14,18 @@ package com.flightxd.hellounion.view
 	/**
 	 * @author John Lindquist
 	 */
-	public class ConnectViewMediator extends Mediator 
+	public class ChatViewMediator extends Mediator 
 	{
 		[Inject]
-		public var view:ConnectView;
+		public var view:ChatView;
 		
 		[Inject]
 		public var controller:UnionController;
+		
+		public function updateReceivedMessages(message:String):void
+		{
+			view.receivedMessageDisplay.appendText(message);	
+		}
 		
 		override public function onRegister():void
 		{
@@ -31,7 +37,13 @@ package com.flightxd.hellounion.view
 		
 		protected function view_connectHandler(event:Event):void
 		{
-			controller.connect();
+			var finishedConnectingResponse:IResponse = controller.connect();
+			finishedConnectingResponse.addResultHandler(connectedHandler);
+		}
+		
+		private function connectedHandler(data:*):void
+		{
+			trace("Look at me, I'm in the Mediator after all the connection logic is done! Amazing!", data);
 		}
 
 		protected function connectionChanged(event:PropertyEvent):void
