@@ -1,22 +1,21 @@
-package com.flightxd.hellounion.domains.union.commands 
+package com.flightxd.hellounion.domains.union.commands
 {
+	import com.flightxd.hellounion.view.ChatViewMediator;
 	import flight.domain.Command;
-
 	import net.user1.reactor.IClient;
 	import net.user1.reactor.RoomEvent;
-
-	import com.flightxd.hellounion.view.ChatViewMediator;
 
 	/**
 	 * @author John Lindquist
 	 */
-	public class UpdateClients extends Command 
+	public class AddClient extends Command
 	{
-		[Inject]
-		public var mediator:ChatViewMediator;
 
 		[Inject]
 		public var event:RoomEvent;
+
+		[Inject]
+		public var mediator:ChatViewMediator;
 
 		override public function execute():void
 		{
@@ -26,14 +25,14 @@ package com.flightxd.hellounion.domains.union.commands
 			mediator.updateReceivedMessages(message);
 		}
 
-		protected function getUserName(client:IClient):String 
+		protected function getUserName(client:IClient):String
 		{
 			var username:String = client.getAttribute("username");
-			if (username == null) 
+			if (username == null)
 			{
 				return "Guest" + client.getClientID();
-			} 
-			else 
+			}
+			else
 			{
 				return username;
 			}

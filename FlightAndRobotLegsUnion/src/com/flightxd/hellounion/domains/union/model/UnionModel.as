@@ -1,11 +1,15 @@
-package com.flightxd.hellounion.domains.union.model 
+package com.flightxd.hellounion.domains.union.model
 {
 
 	/**
 	 * @author John Lindquist
 	 */
-	public class UnionModel 
+	public class UnionModel
 	{
+
+		[Bindable]
+		public var clients:Array;
+
 		[Bindable]
 		public var connectionStatus:String = "not connected";
 

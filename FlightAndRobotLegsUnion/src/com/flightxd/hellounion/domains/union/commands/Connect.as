@@ -1,24 +1,23 @@
-package com.flightxd.hellounion.domains.union.commands 
+package com.flightxd.hellounion.domains.union.commands
 {
-	import net.user1.reactor.Room;
-	import flight.domain.AsyncCommand;
-	import flight.net.IResponse;
-
-	import net.user1.reactor.Reactor;
-
 	import com.flightxd.hellounion.domains.union.UnionController;
 	import com.flightxd.hellounion.services.UnionServices;
+	import flight.domain.AsyncCommand;
+	import flight.net.IResponse;
+	import net.user1.reactor.Reactor;
+	import net.user1.reactor.Room;
 
 	/**
 	 * @author John Lindquist
 	 */
 	public class Connect extends AsyncCommand
 	{
-		[Inject]
-		public var services:UnionServices;
-		
+
 		[Inject]
 		public var controller:UnionController;
+
+		[Inject]
+		public var services:UnionServices;
 
 		override public function execute():void
 		{
@@ -33,26 +32,24 @@ package com.flightxd.hellounion.domains.union.commands
 		private function connectResult(reactor:Reactor):IResponse
 		{
 			controller.model.isConnected = true;
-			
 			var joinResponse:IResponse = services.join();
 			response = joinResponse;
 			response.addResultHandler(joinResult);
 			return response;
 		}
-		
+
+		private function connectedAndJoined(data:*):void
+		{
+			//I magically go back to the Mediator if needed!
+		}
+
 		private function faultHandler(data:*):void
 		{
-			trace("\n\n\n\n\nconnection failed\n\n\n\n\n\n");
+			//connection fail logic
 		}
 
 		private function joinResult(room:Room):void
 		{
-				
-		}
-				
-		private function connectedAndJoined(data:*):void
-		{
-			trace("I magically go back to the Mediator if needed!");
 		}
 	}
 }
