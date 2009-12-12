@@ -1,8 +1,7 @@
 package 
 {
 	import com.flightxd.hellounion.domains.union.UnionContext;
-	import com.flightxd.hellounion.view.ChatView;
-
+	import assets.ChatView;
 	import flash.display.Sprite;
 
 	/**

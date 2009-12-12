@@ -1,11 +1,13 @@
 package com.flightxd.hellounion.services 
 {
+	import com.flightxd.hellounion.events.ChatEvent;
 	import flight.net.IResponse;
 	import flight.net.Response;
 
 	import net.user1.logger.LogEvent;
 	import net.user1.logger.Logger;
 	import net.user1.reactor.ConnectionManagerEvent;
+	import net.user1.reactor.IClient;
 	import net.user1.reactor.Reactor;
 	import net.user1.reactor.ReactorEvent;
 	import net.user1.reactor.Room;
@@ -24,10 +26,9 @@ package com.flightxd.hellounion.services
 
 		[Inject]
 		public var $:UnionConfig;
-		
 		public var reactor:Reactor = new Reactor();
 		public var room:Room;
-		
+
 		[Bindable]
 		public var logMessage:String = "waiting to connect";
 		private static const CHAT_MESSAGE:String = "CHAT_MESSAGE";
@@ -37,7 +38,7 @@ package com.flightxd.hellounion.services
 			logger = reactor.getLog();
 			logger.addEventListener(LogEvent.UPDATE, logger_logHandler);
 		}
-		
+
 		protected function logger_logHandler(event:LogEvent):void
 		{
 			eventDispatcher.dispatchEvent(event);
@@ -69,7 +70,7 @@ package com.flightxd.hellounion.services
 			
 			return joinResponse;
 		}
-		
+
 		private function updateClientAttributeListener(event:RoomEvent):void
 		{
 		}
@@ -88,8 +89,13 @@ package com.flightxd.hellounion.services
 		{
 		}
 
-		private function chatMessageListener():void
+		protected function chatMessageListener(fromClient:IClient, messageText:String):void 
 		{
+			var chatEvent:ChatEvent = new ChatEvent(ChatEvent.RECEIVE_MESSAGE);
+			chatEvent.clientID = fromClient.getClientID();
+			chatEvent.messageText = messageText;
+			
+			dispatch(chatEvent);
 		}
 
 		public function sendMessage():IResponse

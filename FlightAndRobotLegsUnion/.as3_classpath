@@ -9,4 +9,5 @@
     <AS3Classpath generateProblems="false" type="lib" useAsSharedCode="false">rpc.swc</AS3Classpath>
     <AS3Classpath generateProblems="false" type="lib" useAsSharedCode="false">utilities.swc</AS3Classpath>
     <AS3Classpath generateProblems="false" type="lib" useAsSharedCode="false">libs/robotlegs-framework-v1.0.0.swc</AS3Classpath>
+	<AS3Classpath generateProblems="false" type="lib" useAsSharedCode="false">libs/FlightAndRobotLegsUnion-assets.swc</AS3Classpath>
 </AS3Classpath>

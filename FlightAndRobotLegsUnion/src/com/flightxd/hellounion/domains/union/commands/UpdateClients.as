@@ -10,7 +10,7 @@ package com.flightxd.hellounion.domains.union.commands
 	/**
 	 * @author John Lindquist
 	 */
-	public class AddClient extends Command 
+	public class UpdateClients extends Command 
 	{
 		[Inject]
 		public var mediator:ChatViewMediator;

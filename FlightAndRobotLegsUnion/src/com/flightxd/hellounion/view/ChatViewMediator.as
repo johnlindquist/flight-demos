@@ -1,15 +1,17 @@
 package com.flightxd.hellounion.view 
 {
-	import flight.net.IResponse;
-	import com.flightxd.hellounion.events.ConnectEvent;
 	import flight.binding.Bind;
 	import flight.events.PropertyEvent;
+	import flight.net.IResponse;
 
 	import com.flightxd.hellounion.domains.union.UnionController;
 
 	import org.robotlegs.mvcs.Mediator;
 
 	import flash.events.Event;
+	import flash.events.MouseEvent;
+	
+	import assets.ChatView;
 
 	/**
 	 * @author John Lindquist
@@ -24,18 +26,19 @@ package com.flightxd.hellounion.view
 		
 		public function updateReceivedMessages(message:String):void
 		{
-			view.receivedMessageDisplay.appendText(message);	
+			message += "\n";
+			view.chatDisplay.appendText(message);	
 		}
 		
 		override public function onRegister():void
 		{
-			view.addEventListener(ConnectEvent.CONNECT, view_connectHandler);
+			view.connectButton.addEventListener(MouseEvent.CLICK, connectButton_clickHandler);
 			
-			Bind.addBinding(view, "connectionStatusDisplay.text", controller, "model.connectionStatus");
+			Bind.addBinding(view, "statusDisplay.text", controller, "model.connectionStatus");
 			Bind.addListener(connectionChanged, controller, "model.isConnected");	
 		}
 		
-		protected function view_connectHandler(event:Event):void
+		protected function connectButton_clickHandler(event:Event):void
 		{
 			var finishedConnectingResponse:IResponse = controller.connect();
 			finishedConnectingResponse.addResultHandler(connectedHandler);
@@ -48,13 +51,14 @@ package com.flightxd.hellounion.view
 
 		protected function connectionChanged(event:PropertyEvent):void
 		{
-			if(controller.model.isConnected)
+			var isConnected:Boolean = event.newValue as Boolean;
+			if(isConnected)
 			{
-				view.showConnectedButton();
+				view.statusIndicator.gotoAndStop("connected");
 			}
 			else
 			{
-				view.showDisconnectedButton();
+				view.statusIndicator.gotoAndStop("disconnected");
 			}
 		}
 	}
