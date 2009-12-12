@@ -19,12 +19,9 @@ package com.flightxd.hellounion.domains.union.commands
 		override public function execute():void
 		{
 			var message:String;
-
 			var clientID:String = event.clientID;
 			var messageText:String = event.messageText;
-
 			message = "Guest" + clientID + ": " + messageText;
-
 			mediator.updateReceivedMessages(message);
 		}
 	}

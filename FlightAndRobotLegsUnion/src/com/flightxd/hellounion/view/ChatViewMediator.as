@@ -27,12 +27,15 @@ package com.flightxd.hellounion.view
 
 		override public function onRegister():void
 		{
+			//text
 			view.chatDisplay.htmlText = "<font size='16pt'><b>Welcome to Flying Robot Pants Chat!</b></font>";
 			view.userList.htmlText = "<font size='16pt'><b>User List</b></font>";
 			view.inputDisplay.text = "Type a message then press enter...";
+			//bindings
 			Bind.addBinding(view, "statusDisplay.text", controller, "model.connectionStatus");
 			Bind.addListener(connectionChanged, controller, "model.isConnected");
 			Bind.addListener(clientsChanged, controller, "model.clients");
+			//listeners
 			view.connectButton.addEventListener(MouseEvent.CLICK, connectButton_clickHandler);
 			view.inputDisplay.addEventListener(FocusEvent.FOCUS_IN, inputDisplay_focusInHandler);
 			view.inputDisplay.addEventListener(KeyboardEvent.KEY_DOWN, inputDisplay_keyDownHandler);

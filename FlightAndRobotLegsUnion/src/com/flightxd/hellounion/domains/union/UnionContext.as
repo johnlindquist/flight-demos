@@ -13,7 +13,6 @@ package com.flightxd.hellounion.domains.union
 	import assets.ChatView;
 	import net.user1.logger.LogEvent;
 	import net.user1.reactor.RoomEvent;
-	import org.robotlegs.base.ContextEvent;
 	import org.robotlegs.mvcs.Context;
 
 	/**
@@ -41,8 +40,6 @@ package com.flightxd.hellounion.domains.union
 			commandMap.mapEvent(RoomEvent.REMOVE_CLIENT, RemoveClient);
 			commandMap.mapEvent(ChatEvent.UPDATE_CLIENT_ATTRIBUTE, UpdateClientAttribute);
 			commandMap.mapEvent(ChatEvent.RECEIVE_MESSAGE, UpdateMessages);
-			//startup
-			dispatchEvent(new ContextEvent(ContextEvent.STARTUP));
 		}
 	}
 }

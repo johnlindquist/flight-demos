@@ -50,6 +50,7 @@ package com.flightxd.hellounion.domains.union.commands
 
 		private function joinResult(room:Room):void
 		{
+			//join reult logic
 		}
 	}
 }

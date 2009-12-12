@@ -10,12 +10,10 @@ package
 	[SWF(width="550", height="400", frameRate="31", backgroundColor="#ffffff")]
 	public class Main extends Sprite
 	{
-
 		public function Main()
 		{
 			context = new UnionContext(this);
 			connectView = new ChatView();
-
 			addChild(connectView);
 		}
 
